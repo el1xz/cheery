@@ -2,7 +2,12 @@
 
 ## Project setup
 ```
+git clone
 npm install
+
+If you encounter an error "blocked by CORS policy"
+need install Moesif Origin & CORS Changer and turn on it
+
 ```
 
 ### Compiles and hot-reloads for development
@@ -19,6 +24,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
