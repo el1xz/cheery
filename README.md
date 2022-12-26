@@ -7,7 +7,6 @@ npm install
 
 If you encounter an error "blocked by CORS policy"
 need install Moesif Origin & CORS Changer and turn on it
-
 ```
 
 ### Compiles and hot-reloads for development
