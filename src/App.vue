@@ -29,11 +29,14 @@ export default {
       const html = response.data
       const $ = cheerio.load(html)
       const items = []
+      // берем класс "L34o8" и парсим все картинки из него (первые 10 slise)
       $('.L34o8 img').slice(0, 10).each(function (i) {
+        // создаем константу с тегами которую преобразовывем в массив чтобы залить туда несколько тегов
         const tags = $(this).closest('.YdIix').find('a').toArray()
         items[i] = {
           url: $(this).attr('src'),
           tags: tags.map(tag => ({
+            // записываем данные в массив
             name: $(tag).text(),
             link: $(tag).attr('href')
           }))
